@@ -198,22 +198,22 @@ Then in your [keymap.toml](https://yazi-rs.github.io/docs/configuration/keymap) 
 ```toml
 [[manager.prepend_keymap]]
 on = "H"
-run = "plugin duckdb -1"
+run = "plugin duckdb -- -1"
 desc = "Scroll one column to the left"
 
 [[manager.prepend_keymap]]
 on = "L"
-run = "plugin duckdb +1"
+run = "plugin duckdb -- +1"
 desc = "Scroll one column to the right"
 
 [[manager.prepend_keymap]]
 on = ["g", "o"]
-run = "plugin duckdb -open"
+run = "plugin duckdb -- -open"
 desc = "open with duckdb"
 
 [[manager.prepend_keymap]]
 on = ["g", "u"]
-run = "plugin duckdb -ui"
+run = "plugin duckdb -- -ui"
 desc = "open with duckdb ui"
 
 ```
